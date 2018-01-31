@@ -27,10 +27,150 @@
     <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-        <section>
 
-         <h2 style="font-weight: bold">Do Lixo ao Luxo</h2>
-         <h4>Migração de Tecnologias</h4>
+        <section>
+          <section>
+            <h2 style="font-weight: bold">Do Lixo ao Luxo</h2>
+            <h4>Migração de Tecnologias</h4>
+          </section>
+          <section>
+            <h2>>_ Whoami</h2>
+            <ul>
+              <li>Graduando em Sistemas de Informação</li>
+              <li>Finalista RoadSec 2017 - RJ</li>
+              <li>Entusiasta de Segurança, Redes e SO</li>
+              <li>0.75% FullStack</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Que tal um acordo?</h3>
+            <ul>
+              <li>Dúvidas?
+                <span class="fragment"> Pergunte</span>
+              </li>
+              <li>
+                Não sabe ao certo?
+                <span class="fragment"> Pergunte</span>
+              </li>
+              <li>
+                Esqueceu?
+                <span class="fragment"> Pergunte</span>
+              </li>
+              <li>
+                Quer ir ao Banheiro?
+                <span class="fragment"> A vida é sua xD</span>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>O que você não sabe?</h3>
+            <ul>
+              <li class="fragment">Bibliotecas</li>
+              <li class="fragment">Frameworks</li>
+              <li class="fragment">APIs/Endpoints</li>
+              <li class="fragment">Microsserviços</li>
+              <li class="fragment">Containers</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Você desenvolvedor, o que faria...</h3>
+            <ol class="ol">
+              <li class="li">
+                Para desenvolver um sistema de CRUD com 2 tabelas?
+                <small>Vale um biz</small>
+              </li>
+              <li class="li">
+                Desenvolver um sistema de controle de trânsito?
+                <small>Vale um biz</small>
+              </li>
+              <li class="li">
+                Controlar a infraestrutura de uma faculdade?
+                <small>Vale um biz</small>
+              </li>
+              <li class="li">
+                Administrar a infraestrutura do Nubank?
+                <small>Vale um biz</small>
+              </li>
+            </ol>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Empresas Melhores Amigas</h3>
+            <ul>
+              <li>
+                <a href="https://aws.amazon.com/">Amazon AWS</a> - Sem palavras
+              </li>
+              <li>
+                <a href="https://www.ibm.com/us-en/">IBM</a> - Watson e Bluemix
+              </li>
+              <li>
+                <a href="https://www.jetbrains.com">Jetbrains</a> - IDEs e Serviços de Build
+              </li>
+              <li>
+                <a href="https://www.atlassian.com">Atlasian</a> - Sistemas de Gestão de TI
+              </li>
+              <li>
+                <a href="https://developers.google.com/">Google</a> - Sem palavras²
+              </li>
+              <li>
+                <a href="https://github.com/">GitHub</a> - Repositórios de código
+              </li>
+              <li>
+                <a href="https://www.linux.org">Linux</a> - Sistema de Qualidade
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Contribuidores de Tecnologia
+              <small>Desenvolvimento</small>
+            </h3>
+            <ul>
+              <li>
+                <a href="https://github.com/twitter">Twitter</a> - Bootstrap, Java, Ruby on Rails
+              </li>
+              <li>
+                <a href="https://github.com/facebook">Facebook</a> - React {Native}, Flux e Hiphop
+              </li>
+              <li>
+                <a href="https://github.com/google">Google</a> - Gson, Go, Android e Angular
+              </li>
+              <li>
+                <a href="https://github.com/apache">Apache</a> - Cordova, Tomcat, Maven
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Otimize seu tempo</h3>
+            <ul>
+              <li>Frameworks são desenvolvidos por pessoas que sabem</li>
+              <li>Revisado por milhões de desenvolvedores</li>
+              <li>Diversas Features inovadoras</li>
+              <li><strong>CAMARADA, NÃO REIVENTA A RODA!!!</strong></li>
+            </ul>
+            <blockquote>
+              Framework é qualquer toolkit que englobe ferramentas, bibliotecas, apis e regras que são utilizadas para um propósito comum
+              dentro da comunidade desenvolvedora
+            </blockquote>
+          </section>
+          <section>
+            <h3>Frameworks Backend</h3>
+            <ul>
+              <li><a href="http://rubyonrails.org">Ruby on Rails</a> - Ruby</li>
+              <li><a href="spring.io">Spring MVC</a> - Java</li>
+              <li><a href="https://laravel.com">Laravel</a> - PHP</li>
+              <li><a href="https://www.meteor.com">Meteor</a> - NodeJS</li>
+              <li><a href="https://twitter.github.io/finatra/">Finatra</a> - Scala</li>
+            </ul>
+          </section>
+        </section>
 
       </div>
     </div>
@@ -86,41 +226,41 @@
           }
         },
         dependencies: [{
-            src: 'lib/js/classList.js',
-            condition: function () {
-              return !document.body.classList;
-            }
-          },
-          {
-            src: 'plugin/elapsed-time-bar/elapsed-time-bar.min.js' //Progress time bar
-          },
-          {
-            src: 'plugin/notes/notes.js',
-            async: true // Slide notes
-          },
-          {
-            src: 'plugin/highlight/highlight.js',
-            async: true,
-            callback: function () {
-              hljs.initHighlightingOnLoad();
-            }
-          },
-          {
-            src: 'plugin/zoom-js/zoom.js',
-            async: true
-          },
-          // { // Mouse click to next slide
-          //   src: 'js/mouse-click.js' 
-          // },
-          { // Modal plugin creator 
-            src: 'plugin/modal/modal.js'
-          },
-          {
-            src: 'plugin/chart/chart.min.js'
-          },
-          {
-            src: 'plugin/chart/csv2chart.js'
+          src: 'lib/js/classList.js',
+          condition: function () {
+            return !document.body.classList;
           }
+        },
+        {
+          src: 'plugin/elapsed-time-bar/elapsed-time-bar.min.js' //Progress time bar
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true // Slide notes
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        },
+        // { // Mouse click to next slide
+        //   src: 'js/mouse-click.js' 
+        // },
+        { // Modal plugin creator 
+          src: 'plugin/modal/modal.js'
+        },
+        {
+          src: 'plugin/chart/chart.min.js'
+        },
+        {
+          src: 'plugin/chart/csv2chart.js'
+        }
         ],
       });
       Reveal.configure({
