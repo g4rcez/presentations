@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#000000" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+	<title>reveal.js</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>
+					<h2>NodeJS CLI + Typescript</h2>
+				</section>
+				<section>
+					<h3>Antes de começar...</h3>
+					<ul>
+						<li>Não tenha vergonha de perguntar</li>
+						<li>Dúvidas existem para não existirem mais</li>
+					</ul>
+					<pre>
+						<code>
+while(!Eu.Entendi){
+	Eu.Perguntar "Pode explicar de novo?"
+}
+</code>
+						</pre>
+				</section>
+				<section>
+					<aside class="notes">
+						Falar um pouco sobre algumas ferramentas CLI, como firebase-tools, git,
+						ferramentas do unix
+					</aside>
+					<h3>O que iremos ver?</h3>
+					<ol>
+						<li>NodeJS com Typescript</li>
+						<li>Ferramental CLI</li>
+						<li>Hello CLI</li>
+						<li>OS</li>
+					</ol>
+				</section>
+				<section>
+					<aside class="notes">
+						Falar do background de NodeJS devido a maioria dos programadores
+						terem vindo de Javascript (browser)
+					</aside>
+					<h3>Porque CLIs com NodeJS?</h3>
+					<ul>
+						<li>É Javascript s2</li>
+						<li>Vasto arsenal de ferramentas</li>
+						<li>Provavelmente todo mundo tem</li>
+					</ul>
+				</section>
+				<section>
+					<aside class="notes">
+						Produtividade, desenvolvimento mais tranquilo devido a
+						não precisar desenhar telas
+					</aside>
+					<h3>Mas por quê usar CLI?</h3>
+					<img data-src="./assets/matrix-cli.jpg" alt="">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Arsenal</h3>
+					<ul>
+						<li><a href="https://github.com/patorjk/figlet.js">Figlet - Unix banners</a></li>
+						<li><a href="https://github.com/chalk/chalk">Chalk - Estilos no terminal</a></li>
+						<li><a href="https://github.com/yargs/yargs">Yargs - Parseando a STDIN</a></li>
+						<li><a href="https://github.com/sindresorhus/ora">Ora - Spinners</a></li>
+						<li><a href="https://github.com/SBoudrias/Inquirer.js">Inquirer.js - Prompts elegantes</a></li>
+						<li><a href="https://github.com/shelljs/shelljs">ShellJS - Comandos unix para JS</a></li>
+						<li><a href="https://github.com/tj/commander.js/">CommanderJS - Facilitando a vida dos CLI</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<pre><code>
+yarn add commander ora figlet chalk semver signale
+					</code></pre>
+					<img src="./assets/hammer.png" width="35%" alt="">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Entendendo os paranaue</h3>
+					<img src="./assets/paranaue.png" alt="">
+				</section>
+				<section>
+					<h3>commander</h3>
+					<ul>
+						<li>Padrão Unix getopt.h</li>
+						<li>Suporte a <i>git style</i></li>
+						<li>Menu de ajuda automático</li>
+					</ul>
+				</section>
+				<section>
+					<h3>chalk</h3>
+					<ul>
+						<li>Output padronizado entre terminais</li>
+						<li>Adicione estilo ao output</li>
+						<li>Pense como se fosse CSS</li>
+					</ul>
+				</section>
+				<section>
+					<h3>signale</h3>
+					<ul>
+						<li>Diversas features de log</li>
+						<li>Extremamente configurável</li>
+						<li>Error handler</li>
+					</ul>
+				</section>
+				<section>
+					<h3>inquirer.js</h3>
+					<ul>
+						<li>Checkbox</li>
+						<li>Inputs, validações, senhas</li>
+						<li>Listas</li>
+						<li>Confirm</li>
+						<li>Autocomplete (plugin)</li>
+						<li>Integração com Chalk (plugin)</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Let's Code</h2>
+				</section>
+				<section>
+					<h3>Lembre-se</h3>
+					<a href="https://shapeshed.com/unix-exit-codes/">Unix exit codes</a>
+				</section>
+			</section>
+		</div>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			slideNumber: true,
+			history: true,
+			mouseWheel: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
